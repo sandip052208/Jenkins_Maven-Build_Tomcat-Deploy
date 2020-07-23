@@ -97,12 +97,9 @@
                         <id>id.clean</id>
                         <phase>clean</phase>
                         <goals>
-                            <goal>build</goal>
+                            <goal>war</goal>
                         </goals>
                         <configuration>
-                            <tasks>
-                                <echo>clean phase</echo>
-                            </tasks>
                         </configuration>
                     </execution>
                     </executions>
