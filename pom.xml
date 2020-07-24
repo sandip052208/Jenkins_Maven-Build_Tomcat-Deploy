@@ -9,12 +9,16 @@
     <packaging>war</packaging>
 
     <build>
+        <defaultGoal>package</defaultGoal>
         <sourceDirectory>src</sourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.4</version>
+                <goals>
+                    <goal>war</goal>
+                </goals>
             </plugin>
         </plugins>
     </build>
