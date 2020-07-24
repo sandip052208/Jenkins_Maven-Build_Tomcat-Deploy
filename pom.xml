@@ -15,13 +15,13 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.4</version>
                 <goals>
-                    <goal>war</goal>
+                    <goal>package</goal>
                 </goals>
                 <executions>
                     <execution>
                         <phase>package</phase>
                         <goals>
-                            <goal>war</goal>
+                            <goal>package</goal>
                         </goals>
                     </execution>
                 </executions>
