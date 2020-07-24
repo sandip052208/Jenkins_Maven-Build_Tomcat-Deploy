@@ -9,30 +9,25 @@
     <packaging>war</packaging>
     <build>
         <sourceDirectory>src</sourceDirectory>
-
-            <pluginManagement>
-                <plugins>
-                    <plugin>
-                        <groupId>org.demo</groupId>
-                        <artifactId>First_Maven_Project</artifactId>
-                        <version>1.0-SNAPSHOT</version>
-                    </plugin>
-
-                </plugins>
-            </pluginManagement>
-
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-war-plugin</artifactId>
-                    <version>2.4</version>
-                    <goals/>
-                </plugin>
-
-            </plugins>
-        </build>
-
-
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.4</version>
+                <goals>
+                    <goal>war</goal>
+                </goals>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>war</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
     <dependencies>
         <dependency>
             <groupId>javax.servlet</groupId>
