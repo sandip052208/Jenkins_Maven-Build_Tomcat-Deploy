@@ -16,14 +16,6 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.4</version>
                 <goal>package</goal>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>package</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
